@@ -284,15 +284,15 @@ const bondFilms = [
 
 // 5. Create a new array called `bondTitles` with only the titles of the 
 //      Bond films, and console.log the new array.
-let bondTitles = [];
+// let bondTitles = [];
 
- for (let i = 0; i < bondFilms.length; i++) {
-//     // if (bondFilms[i] === bondFilms[i]) {
-//     //     bondTitles.push(bondFilms[i][0].value);
-//     //     console.log(bondTitles);
-    bondTitles.push(bondFilms[i].title);
-}
-console.log(bondTitles);
+//  for (let i = 0; i < bondFilms.length; i++) {
+// //     // if (bondFilms[i] === bondFilms[i]) {
+// //     //     bondTitles.push(bondFilms[i][0].value);
+// //     //     console.log(bondTitles);
+//     bondTitles.push(bondFilms[i].title);
+// }
+// console.log(bondTitles);
 
 
 //   &#x1F534; **Commit:** "bondTitles array"
@@ -303,7 +303,14 @@ console.log(bondTitles);
 
 //   &#x1F534; **Commit:** "oddBonds"
 
+const oddBonds = [];
 
+for (let i = 0; i < bondFilms.length; i++) {
+    if (bondFilms[i].year % 2 !== 0) {
+        oddBonds.push(bondFilms[i].year);
+    }
+}
+console.log(oddBonds);
 // 7. Determine the total cumulative gross of the Bond franchise, and 
 //      console.log the result. 
 //   > _Hint_: To make the grosses into usable numbers, look into the 
