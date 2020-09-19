@@ -1,4 +1,4 @@
-console.log("Slappy, Happy, HEEHAW");
+
 
 // ## The questions!
 
@@ -26,66 +26,66 @@ console.log("Slappy, Happy, HEEHAW");
 //   * A light switch that can be either on or off.
 
 // Object, Array, String
-const lights = {
-    lightSwitch: ["On", "Off"],
-};
-console.log(lights.lightSwitch[0]);
+// const lights = {
+//     lightSwitch: ["On", "Off"],
+// };
+// console.log(lights.lightSwitch[0]);
 
 //   * A user's email address.
 
 // Object, String
-const user1 = {
-    email: "john.doe@gmail.com",
-};
-console.log(user1);
+// const user1 = {
+//     email: "john.doe@gmail.com",
+// };
+// console.log(user1);
 //   * A spaceship with a hull, laser blasters, tractor beam, and warp drive.
 
 // Object, Number, String, Boolean
 
-const spaceShip = {
-    hullStength: 50,
-    laserBlasters: "fore, and aft",
-    tractorBean: true,
-    warpDrive: true,
-};
-console.log(spaceShip);
+// const spaceShip = {
+//     hullStength: 50,
+//     laserBlasters: "fore, and aft",
+//     tractorBean: true,
+//     warpDrive: true,
+// };
+// console.log(spaceShip);
 
 //   * A list of student names from our class.
 
 // Object, String
 
-const studentNames = {
-    student1: "John Madden",
-    student2: "Mike Ditka",
-    student3: "Terry Bradshaw",
-    student4: "Jerry Rice",
-};
-console.log(studentNames);
+// const studentNames = {
+//     student1: "John Madden",
+//     student2: "Mike Ditka",
+//     student3: "Terry Bradshaw",
+//     student4: "Jerry Rice",
+// };
+// console.log(studentNames);
 
 
 //   * A list of student names from our class, each with a location.
 
 //  Array, String
 
-const studentInfo = [{name: "John Madden", location: "New York"},
-    {name: "Mike Ditka", location: "Chicago"}, {name: "Terry Bradshaw",
-    location: "Pittsburg"}, {name: "Jerry Rice", location: "San Francisco"}];
+// const studentInfo = [{name: "John Madden", location: "New York"},
+//     {name: "Mike Ditka", location: "Chicago"}, {name: "Terry Bradshaw",
+//     location: "Pittsburg"}, {name: "Jerry Rice", location: "San Francisco"}];
 
-console.log(studentInfo);
+// console.log(studentInfo);
 
 //   * A list of student names from our class, each with a location and 
 //      each with a list of favorite tv shows.
 
 //  Array, String
 
-const studentFavorites = [
-    {name: "John Madden", location: "New York", movies:["Thomas Crown Affair", "Blues Brothers", "Jerry McGuire"]},
-    {name: "Mike Ditka", location: "Chicago", movies:["Patton", "Bridge Over the River Kwai", "The Great Escape"]}, 
-    {name: "Terry Bradshaw", location: "Pittsburg", movies: ["Dumb and Dummer", "Ace Ventura Pet Detective", "Billy Madison"]}, 
-    {name: "Jerry Rice", location: "San Francisco", movies: ["Forest Gump", "Ten Things I Hate About You", "Titanic"]
-    }];
+// const studentFavorites = [
+//     {name: "John Madden", location: "New York", movies:["Thomas Crown Affair", "Blues Brothers", "Jerry McGuire"]},
+//     {name: "Mike Ditka", location: "Chicago", movies:["Patton", "Bridge Over the River Kwai", "The Great Escape"]}, 
+//     {name: "Terry Bradshaw", location: "Pittsburg", movies: ["Dumb and Dummer", "Ace Ventura Pet Detective", "Billy Madison"]}, 
+//     {name: "Jerry Rice", location: "San Francisco", movies: ["Forest Gump", "Ten Things I Hate About You", "Titanic"]
+//     }];
 
-console.log(studentFavorites);
+// console.log(studentFavorites);
 // ---
 
 // &#x1F534; **Commit:** "data types"
@@ -95,12 +95,37 @@ console.log(studentFavorites);
 // ### 2. Take it Easy
 
 // 1. Make an array that holds all of the colors of the rainbow.
+
+// 1)
+
+// const rainbow = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+
 // 2. Write code that will access "blue" from the rainbow array.
+
+// 2) 
+
+// let favColor = rainbow.slice(4, 5);
+// console.log(favColor);
+
+
 // 3. Make an object that is called your name and holds the information 
 //  about your favorite food, a hobby, the name of the town that you live 
 //  in currently, and your favorite datatype.
+
+// const benjamin = {
+//     favFood: "Pizza",
+//     hobby: "Running",
+//     location: "Seattle",
+//     favData: "Objects",
+// }
+ 
 // 4. Write code that will access your hobby from the object that you just 
 //     created.
+
+// 4) 
+
+// console.log(benjamin.hobby);
+
 
 // ---
 
@@ -111,49 +136,51 @@ console.log(studentFavorites);
 
 // ### 3. Crazy Object!
 
-// ```javascript
-// const crazyObject = {
-//   taco: [
-//     {
-//       meat: 'steak',
-//       cheese: ['panela', 'queso', 'chihuahua']
-//     },
-//     {
-//       meat: 'chicken',
-//       salsa: ["pico", "hot", "hotter", "really hot", "really really hot",
-//       "omg my mouth is burning"]
-//     },
-//   ],
-//   larry: {
-//     nicknames: ["LD", "Chicken Teriyaki Boyyyyyy"],
-//     quotes: ["Pretty pretty prettayyyyy good", "Is that a parkinson's 
-//      thing?", "women love a self confident bald man", "I'm a walking 
-//      talking enigma"],
-//     characters: [
-//       {
-//         name: "Jeff",
-//         occupation: "manager"
-//       },
-//       {
-//         name: "funkhauser",
-//         occupation: "tv dude"
-//       },
-//       {
-//         name: "susie",
-//         occupation: "jeffs wife",
-//         favourtieHobby: "Swearing at Larry and Jeff"
-//       },
-//     ]
-//   }
-// }
-// ```
+//javascript
+const crazyObject = {
+  taco: [
+    {
+      meat: 'steak',
+      cheese: ['panela', 'queso', 'chihuahua']
+    },
+    {
+      meat: 'chicken',
+      salsa: ["pico", "hot", "hotter", "really hot", "really really hot", "omg my mouth is burning"]
+    },
+  ],
+  larry: {
+    nicknames: ["LD", "Chicken Teriyaki Boyyyyyy"],
+    quotes: ["Pretty pretty prettayyyyy good", "Is that a parkinson's thing?", "women love a self confident bald man", "I'm a walking talking enigma"],
+    characters: [
+      {
+        name: "Jeff",
+        occupation: "manager"
+      },
+      {
+        name: "funkhauser",
+        occupation: "tv dude"
+      },
+      {
+        name: "susie",
+        occupation: "jeffs wife",
+        favourtieHobby: "Swearing at Larry and Jeff"
+      },
+    ]
+  }
+}
+
 
 // Use crazyObject to log the following.
 
 //   * "omg my mouth is burning"
+console.log(crazyObject.taco[1].salsa[5]);
 //   * "Pretty pretty prettayyyyy good"
+console.log(crazyObject.larry.quotes[0]);
 //   * "Swearing at Larry and Jeff"
+console.log(crazyObject.larry.characters[2].favourtieHobby);
 //   * "Chicken Teriyaki Boyyyyyy"
+console.log(crazyObject.larry.nicknames[1]);
+
 //   * The object the contains the name `funkhauser`
 
 // ---
