@@ -303,20 +303,39 @@ const bondFilms = [
 
 //   &#x1F534; **Commit:** "oddBonds"
 
-const oddBonds = [];
+// const oddBonds = [];
 
-for (let i = 0; i < bondFilms.length; i++) {
-    if (bondFilms[i].year % 2 !== 0) {
-        oddBonds.push(bondFilms[i].year);
-    }
-}
-console.log(oddBonds);
+// for (let i = 0; i < bondFilms.length; i++) {
+//     if (bondFilms[i].year % 2 !== 0) {
+//         oddBonds.push(bondFilms[i].year);
+//     }
+// }
+// console.log(oddBonds);
+
 // 7. Determine the total cumulative gross of the Bond franchise, and 
 //      console.log the result. 
 //   > _Hint_: To make the grosses into usable numbers, look into the 
 //      `.replace` Javascript method (there are many ways to do this, 
 //      however). Look into `parseInt()` also.  
 
+//  I got a lot of help on this one from MDN, Stackoverflow, and W3, I realized that I needed to get rid of the ($) and (,), but didn't know how to do it. 
+let sum = 0;
+for (let i = 0; i < bondFilms.length; i++) {
+    sum = sum + Number(bondFilms[i].gross.replace("$", "").replace(/,/g,''))
+}
+
+console.log(sum);
+
+// This version I wanted to use the parseInt() as suggested above.  I learned that I could map through the object then use regEx to eliminate the characters that would throw a NaN (it happend A LOT) when using parseInt.  I as well used resources to figure this one out (tutorial republic, w3, and MDN)
+
+const gross = bondFilms.map(function(x) {
+    return parseInt(x.gross.replace('$' , '').replace(/,/g, ''))
+});
+let ttlGross = gross.reduce((a, b) => {
+    return a + b;
+})
+
+console.log(ttlGross);
 //   &#x1F534; **Commit:** "bond films gross"
 
 
